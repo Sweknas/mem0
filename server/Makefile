@@ -1,8 +1,8 @@
 .PHONY: up down clean logs seed wait-api wait-dashboard bootstrap health build run_local reset-admin-password prune-logs
 
 OUTPUT ?= text
-API_URL ?= http://localhost:8888
-DASHBOARD_URL ?= http://localhost:3000
+API_URL ?= http://mem0server.internal.codenode.se
+DASHBOARD_URL ?= http://mem0dash.internal.codenode.se
 
 up:
 	@for port in 3000 8888; do \
